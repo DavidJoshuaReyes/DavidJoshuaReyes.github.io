@@ -4,21 +4,24 @@
   "author": "David Joshua Reyes",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
-    "devstart": "nodemon ./bin/www"
+    "start": "node ./build/server.js",
+    "devstart": "nodemon ./build/server.js"
   },
   "dependencies": {
-    "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.16.0",
+    "fs": "0.0.1-security",
     "http-errors": "~1.6.2",
-    "mongoose": "^5.3.9",
-    "morgan": "~1.9.0",
-    "node-sass-middleware": "0.11.0",
-    "pug": "2.0.0-beta11",
-    "uikit": "^3.0.0-rc.20"
+    "morgan": "^1.9.1",
+    "node-sass-middleware": "0.11.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.4"
+    "child_process": "^1.0.2",
+    "fs": "0.0.1-security",
+    "gulp": "^4.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-pug": "^4.0.1",
+    "nodemon": "^1.18.4",
+    "pug": "^2.0.3"
   }
 }
