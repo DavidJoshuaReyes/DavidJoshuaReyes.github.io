@@ -37,8 +37,7 @@ const runServer = (done) => {
     done();
 };
 
-// all your tasks go below
-
+// register tasks
 gulp.task('clean', destroyBuildFiles);
 
 gulp.task('build', gulp.series([
