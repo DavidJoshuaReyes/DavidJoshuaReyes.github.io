@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600&display=swap');
+
 
 body {
-  color: #fff;
   font-family: "Roboto Condensed", sans-serif;
   /* background-image: url("https://images.unsplash.com/photo-1508389377389-b8221c0bcc9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"); */
   /* background-image: url("lights.jpg"); */
   background-position: top top;
   background-size: cover;
   margin: 0;
+  text-align: center;
 }
 
 .App {
@@ -37,13 +40,38 @@ body {
 
 h1 {
   font-size: 38px;
-  text-transform: uppercase;
   line-height: 1;
+}
+
+.wedding-font {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.name {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 3rem;
+  line-height: 1.5;
+  letter-spacing: 20px;
+  padding-left: 25px;
 }
 
 @media (min-width: 768px) {
   .container {
     width: 1100px;
+  }
+  .wedding-font {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    line-height: 1;
+  }
+  .name {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 4rem;
+    line-height: 1.5;
+    letter-spacing: 20px;
+    padding-left: 25px;
   }
   h1 {
     font-size: 58px;
