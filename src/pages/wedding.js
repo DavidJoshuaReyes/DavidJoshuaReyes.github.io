@@ -25,9 +25,22 @@ const Wedding = () => (
               <span className="name">DAVID</span>
             </div>
           </div>
+          
           <div className="section">
             <p>
               <span className="name" style={{ color: '#E7EBEC' }}>WE'RE GETTING MARRIED!</span>
+            </p>
+          </div>
+
+          <div className="section" id="">
+            <p>
+              <span className="name" style={{ color: '#E7EBEC' }}></span>
+            </p>
+          </div>
+
+          <div className="section" id="registry">
+            <p>
+              <span className="name" style={{ color: '#E7EBEC' }}>registry</span>
             </p>
           </div>
         </ReactFullpage.Wrapper>

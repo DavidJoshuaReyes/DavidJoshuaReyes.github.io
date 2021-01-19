@@ -109,16 +109,16 @@ h1 {
     font-size: 58px;
   }
   .landing-image-right {
-    position: fixed;
+    position: absolute;
     left: 60%;
-    top: 10%;
+    top: 15%;
     width: 450px;
     transform: rotate(35deg);
   }
   .landing-image-left {
-    position: fixed;
+    position: absolute;
     right: 60%;
-    top: 10%;
+    top: 15%;
     transform: scaleX(-1) rotate(35deg);
     width: 450px;
   }
