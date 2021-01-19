@@ -67,19 +67,19 @@ h1 {
 }
 
 .landing-image-right {
-  position: fixed;
-  left: 50%;
-  top: 10%;
-  width: 300px;
+  position: absolute;
+  left: -60px;
+  top: -80px;
+  width: 400px;
+  transform: scaleY(-1) rotate(20deg);
 }
 
 .landing-image-left {
-  position: fixed;
-  right: 50%;
-  top: 10%;
-  width: 45%;
-  transform: scaleX(-1);
-  width: 300px;
+  position: absolute;
+  right: -60px;
+  bottom: -100px;
+  transform: scaleX(-1) rotate(20deg);
+  width: 400px;
 }
 
 .centered {
