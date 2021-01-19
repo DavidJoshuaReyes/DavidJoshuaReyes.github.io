@@ -1,31 +1,33 @@
 import React from "react"
 import "../components/styles.css";
 import ReactFullpage from "@fullpage/react-fullpage";
-import flowers from "../images/flowers-3.png";
+import flowers from "../images/flower-5.png";
 
 const Wedding = () => (
-<ReactFullpage
+  <ReactFullpage
     /* Options here */
-    scrollingSpeed = {800}
-    sectionsColor = {['#E7EBEC', '#425554']}
+    scrollingSpeed={800}
+    sectionsColor={['#E7EBEC', '#425554']}
 
     render={({ state, fullpageApi }) => {
       return (
         <ReactFullpage.Wrapper>
-          <div className="section landing">
-            <img src={flowers} />
-            <div>
-              <span class="name">DAVID</span>
-              <span class="wedding-font">and</span> 
-              <span class="name">KAREN</span>
+          <div className="section">
+            <div className="landing-image">
+              <img src={flowers} alt="left-flower" className="landing-image-left" />
+              <img src={flowers} alt="right-flower" className="landing-image-right" />
             </div>
-            {/* <button onClick={() => fullpageApi.moveSectionDown()}>
-              Click me to move down
-            </button> */}
+            <div className="centered landing-text">
+              <span className="name">KAREN</span>
+              <br />
+              <span className="wedding-font">and</span>
+              <br />
+              <span className="name">DAVID</span>
+            </div>
           </div>
           <div className="section">
             <p>
-              <span className="name" style={{color: '#E7EBEC'}}>WE'RE GETTING MARRIED!</span>
+              <span className="name" style={{ color: '#E7EBEC' }}>WE'RE GETTING MARRIED!</span>
             </p>
           </div>
         </ReactFullpage.Wrapper>

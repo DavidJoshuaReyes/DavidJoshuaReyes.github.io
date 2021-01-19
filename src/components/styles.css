@@ -47,6 +47,7 @@ h1 {
   font-family: 'Great Vibes', cursive;
   font-size: 2rem;
   line-height: 1;
+  z-index: 100;
 }
 
 .name {
@@ -55,6 +56,37 @@ h1 {
   line-height: 1.5;
   letter-spacing: 20px;
   padding-left: 25px;
+}
+
+.landing-image {
+  z-index: 1;
+}
+
+.landing-text {
+  z-index: 1000;
+}
+
+.landing-image-right {
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  width: 300px;
+}
+
+.landing-image-left {
+  position: fixed;
+  right: 50%;
+  top: 10%;
+  width: 45%;
+  transform: scaleX(-1);
+  width: 300px;
+}
+
+.centered {
+  position: fixed;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
 }
 
 @media (min-width: 768px) {
@@ -75,5 +107,19 @@ h1 {
   }
   h1 {
     font-size: 58px;
+  }
+  .landing-image-right {
+    position: fixed;
+    left: 60%;
+    top: 10%;
+    width: 450px;
+    transform: rotate(35deg);
+  }
+  .landing-image-left {
+    position: fixed;
+    right: 60%;
+    top: 10%;
+    transform: scaleX(-1) rotate(35deg);
+    width: 450px;
   }
 }
